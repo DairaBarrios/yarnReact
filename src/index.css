@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#itemCount {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+#counter {
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+#counter button {
+  margin: 20px;
+}
