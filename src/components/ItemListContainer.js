@@ -6,7 +6,6 @@ function ItemListContainer( props ) {
     return (
         <div>
             <h1 id={props.id}>{props.greeting}</h1>
-            <ItemCount stock="5" initial="1"></ItemCount>
             <ItemList></ItemList>
         </div>
     )

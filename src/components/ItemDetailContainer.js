@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import ItemDetail from "./ItemDetail";
 
 function ItemDetailContainer( props ) {
-    const [data, setData] = useState(props.initial);
+    const [data, setData] = useState();
 
     const getItems = () => {
         return new Promise((resolve) => setTimeout(() => resolve(mockItemDetail()), 2000))

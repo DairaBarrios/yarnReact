@@ -1,0 +1,615 @@
+html {
+    position: relative;
+    min-height: 100%;
+    max-width: 100vw; }
+
+body {
+    font-family: "Quicksand", sans-serif;
+    margin-bottom: 100px; }
+
+section {
+    margin: 5%; }
+
+/* Fonts */
+h1 {
+    color: black;
+    font-weight: 900;
+    font-size: 3.5em;
+    text-align: center;
+    padding-top: 1em; }
+
+#contactanos {
+    text-align: center; }
+
+#loMasPedido {
+    text-align: center;
+    font-weight: 700;
+    font-size: 3.5em; }
+
+h3 {
+    text-align: center; }
+
+.subtitulo {
+    color: black;
+    font-weight: 900;
+    font-size: 3em;
+    padding-bottom: 1em;
+    text-align: center; }
+
+/*navBar*/
+.nav-link {
+    color: white !important;
+    font-size: 1.2em !important; }
+
+.navbar-scroll {
+    background: #9D6B53;
+    background-image: none;
+    text-decoration: none; }
+.navbar-scroll a:hover {
+    background-color: #CD9777;
+    color: black;
+    border-radius: 3%; }
+
+.navbar-scroll--color--transparente {
+    background: transparent;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.37)); }
+
+a {
+    color: black;
+    text-decoration: none; }
+
+.navbar-title {
+    display: none; }
+.navbar-title p {
+    margin: 0;
+    color: white !important;
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: 2px; }
+
+#navbar header div{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1050px) {
+    .navbar-scroll--color--transparente {
+        background: #9D6B53;
+        background-image: none; } }
+
+@media (max-width: 550px) {
+    .navbar-scroll--color--transparente {
+        background: #9D6B53;
+        background-image: none; } }
+
+/* carousel */
+.carousel {
+    padding-bottom: 1em; }
+.carousel .carousel-caption h5 {
+    font-weight: 900;
+    font-size: 5em;
+    text-shadow: 0 0 18px black; }
+.carousel .carousel-caption p {
+    font-weight: 700;
+    font-size: 2em;
+    text-shadow: 0 0 18px black; }
+.carousel .carousel-item {
+    height: 700px; }
+.carousel .carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 700px; }
+
+@media (max-width: 1050px) {
+    .carousel {
+        width: 100%; }
+    .carousel .carousel-item {
+        height: 400px; }
+    .carousel .carousel-item img {
+        min-height: 400px; } }
+
+@media (max-width: 550px) {
+    .carousel .carousel-item {
+        height: 400px; }
+    .carousel .carousel-item img {
+        min-height: 400px; } }
+
+/*Bienvenidos a Yarn- se usa: como comprar*/
+.contenedor {
+    padding: 5em;
+    margin-left: 0;
+    margin-right: 0; }
+
+.contenedor--style--intro {
+    margin-top: 1em;
+    margin-bottom: 0;
+    background-color: #b6b4b3d8; }
+.contenedor--style--intro h1 {
+    padding-top: 0em; }
+.contenedor--style--intro p {
+    padding-top: 2em;
+    font-size: 1.5em;
+    line-height: 1.6em; }
+
+.contenedor--style--loMasPedido {
+    background-color: #f8e5da;
+    margin-bottom: 1em;
+    margin-top: 5em; }
+.contenedor--style--loMasPedido h3 {
+    font-size: 3.5em;
+    font-weight: 500; }
+.contenedor--style--loMasPedido p {
+    font-size: 1.5em; }
+
+.contenedorProducto {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin: 3rem; }
+.contenedorProducto div {
+    margin: 1rem;
+    padding: 2rem;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+.contenedorProducto__row {
+    flex-direction: row; }
+
+.contenedorProducto__row_reverse {
+    flex-direction: row-reverse; }
+
+.imgMasPedidos {
+    height: auto;
+    max-width: 600px;
+    padding: 0.5rem;
+    width: 0;
+    flex: 1 1 0;
+    border-radius: 3%; }
+
+/*info hilo y lana*/
+.infoLana {
+    display: flex;
+    flex: 1 1;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    margin-bottom: 10em;
+    margin-top: 5em; }
+.infoLana .paletaColores {
+    display: flex;
+    height: 100%; }
+.infoLana h2 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 600; }
+.infoLana p {
+    font-size: 1.5em;
+    padding-top: 1em; }
+.infoLana ul {
+    font-size: 1.5em; }
+.infoLana #animationHilo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #e5cabc;
+    padding: 2em;
+    width: 50%; }
+
+.coloresLana {
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    width: 100%; }
+
+.mobileColor {
+    flex: 1 0 auto;
+    margin: 5px;
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 2em;
+    height: 2em; }
+
+.mobileColor--2008 {
+    background-color: #ca5a7e; }
+
+.mobileColor--5254 {
+    background-color: #015694; }
+
+.mobileColor--6021 {
+    background-color: #47bcb5; }
+
+.mobileColor--6260 {
+    background-color: #00794e; }
+
+.mobileColor--1260 {
+    background-color: #fed54d; }
+
+.mobileColor--2155 {
+    background-color: #eb523a; }
+
+.mobileColor--4015 {
+    background-color: #cdb0ce; }
+
+.mobileColor--7340 {
+    background-color: #a17250; }
+
+/*garantia y seguro*/
+.garantiaSeguro {
+    display: flex;
+    flex: 1 1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+.garantiaSeguro div {
+    display: flex;
+    flex: 1 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    padding-bottom: 4em; }
+.garantiaSeguro div i {
+    color: #b68870;
+    width: 1em; }
+.garantiaSeguro div p {
+    font-size: 1.5em;
+    margin: 0;
+    margin-left: 0.5em; }
+
+@media (max-width: 1050px) {
+    /*Bienvenidos a Yarn- se usa: como comprar*/
+    .noTablet {
+        display: none; }
+    /*info hilo y lana*/
+    .infoLana {
+        margin: 5em 0;
+        padding: 0;
+        flex: 1 0;
+        width: 100%;
+        flex-direction: column; }
+    .infoLana #animationHilo {
+        width: 100%;
+        margin: 0;
+        padding: 1em; }
+    #bienvenido {
+        margin: 0;
+        width: 100%; }
+    /* Contenedor producto*/
+    #contenedorLoMasPedido {
+        margin: 0;
+        width: 100%; }
+    .contenedorProducto {
+        align-items: center; }
+    .contenedorProducto__row {
+        flex-direction: column-reverse; }
+    .contenedorProducto__row_reverse {
+        flex-direction: column-reverse; }
+    .imgMasPedidos {
+        width: 70vw;
+        min-width: 70vw;
+        height: auto;
+        border-radius: 10%; } }
+
+@media (max-width: 550px) {
+    /*Bienvenidos a Yarn- se usa: como comprar*/
+    .noDesktop {
+        display: block; }
+    .noMobile {
+        display: none; }
+    /*info hilo y lana*/
+    .infoLana {
+        margin: 5em 0;
+        padding: 0;
+        flex: 1 0;
+        width: 100%;
+        flex-direction: column; }
+    .infoLana #animationHilo {
+        width: 100%;
+        margin: 0;
+        padding: 1em; }
+    /*garantia y seguro */
+    .garantiaSeguro {
+        flex-direction: column; }
+    .garantiaSeguro div {
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+        padding-bottom: 4em; }
+    .garantiaSeguro div i {
+        color: #b68870; }
+    .garantiaSeguro div p {
+        font-size: 1.25em;
+        margin: 0;
+        margin-left: 0.5em; }
+    /* Contenedor producto*/
+    .contenedorProducto__row {
+        flex-direction: column-reverse; }
+    .contenedorProducto__row_reverse {
+        flex-direction: column-reverse; }
+    .imgMasPedidos {
+        width: 70vw;
+        min-width: 70vw;
+        height: auto;
+        border-radius: 10%; } }
+
+/* grid SHOP*/
+.mainProducts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+    padding: 2em;
+    justify-items: center;
+    background-color: #beb2ff27;
+    border-radius: 2%; }
+.galeria img {
+    border-radius: 25px; }
+
+.informacion {
+    position: relative; }
+.informacion:hover {
+    z-index: 999; }
+.informacion:hover .textoEncima {
+    opacity: 1; }
+.informacion a img {
+    height: 100%;
+    width: 20vw; }
+
+.textoEncima {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: black;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 25px;
+    margin-bottom: 0px; }
+
+.text-center {
+    padding-bottom: 2em; }
+
+@media (max-width: 1050px) {
+    .galeria {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: auto;
+        justify-items: center;
+        padding: 3vh 0;
+        background-color: white;
+        border-radius: 0;
+        margin: 0; }
+    .informacion {
+        display: flex;
+        flex-direction: column;
+        width: 40vw; }
+    .informacion a img {
+        width: 100%;
+        height: auto;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0; }
+    .textoEncima {
+        position: relative;
+        opacity: 1;
+        transition: none;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding-top: 2vh;
+        padding-bottom: 2vh; }
+    .text-center {
+        padding-top: 2em;
+        padding-bottom: 2em; }
+    .noExcelsior {
+        display: none; } }
+
+@media (max-width: 550px) {
+    .mainProducts {
+        margin-top: 200px; }
+    .mainProducts h1 {
+        padding-top: 0;
+        margin-bottom: 1em; }
+    .galeria {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: auto;
+        justify-items: center;
+        padding: 3vh 0;
+        background-color: white;
+        border-radius: 0;
+        margin: 0; }
+    .informacion {
+        display: flex;
+        flex-direction: column;
+        width: 80vw; }
+    .informacion a img {
+        width: 100%;
+        height: auto;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0; }
+    .textoEncima {
+        position: relative;
+        opacity: 1;
+        transition: none;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding: 2vh; }
+    .text-center {
+        padding-top: 2em;
+        padding-bottom: 2em; } }
+
+/* Listas */
+ul {
+    text-align: center;
+    list-style-position: inside;
+    list-style: none; }
+ul li {
+    color: black;
+    font-size: 18px; }
+
+ul {
+    text-align: center;
+    list-style-position: inside; }
+
+.iconosCrochet li {
+    color: black;
+    font-size: 18px;
+    list-style-image: url(../img/iconoCrochet.png);
+    text-align: center; }
+
+/* Formulario */
+form {
+    border: none;
+    border-radius: 40px;
+    background-color: #beb2ff81;
+    width: 800px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20vh auto;
+    padding: 5rem; }
+
+.custom-control {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+
+@media (max-width: 1050px) {
+    .form {
+        width: 80vw;
+        margin: 30vh auto 35vh auto;
+        padding: 5vw; } }
+
+@media (max-width: 550px) {
+    .form {
+        width: 100vw;
+        margin: 20vh 0;
+        padding: 5vw;
+        justify-self: center;
+        align-self: center; }
+    #formRegistrate {
+        margin-top: 30vh; } }
+
+/*botones*/
+.btn-submit {
+    color: white;
+    background-color: #9D6B53;
+    border-radius: 5px; }
+
+.btn-reset {
+    color: white;
+    background-color: #b68870;
+    border-radius: 5px; }
+
+.btn-outline-submit {
+    border-color: #9D6B53;
+    color: #9D6B53; }
+.btn-outline-submit:hover {
+    color: white;
+    background-color: #9D6B53;
+    border-radius: 0px; }
+
+.custom-control-input-rose:focus ~ .custom-control-label::before {
+    border-color: #9D6B53 !important;
+    box-shadow: 0 0 0 0.2rem #926f5e !important; }
+
+.custom-control-input-rose:checked ~ .custom-control-label::before {
+    border-color: #9D6B53 !important;
+    background-color: #9D6B53 !important; }
+
+.custom-control-input-rose:focus:not(:checked) ~ .custom-control-label::before {
+    border-color: #9D6B53 !important; }
+
+.custom-control-input-rose:not(:disabled):active ~ .custom-control-label::before {
+    background-color: #d6f5dd !important;
+    border-color: #d6f5dd !important; }
+
+/* Footer*/
+footer {
+    background: #b6b4b3d8;
+    padding: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    clear: both;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+footer div a {
+    text-decoration: none;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem; }
+
+/*html como comprar*/
+@media (max-width: 1050px) {
+    .contenedor {
+        width: 70vw;
+        margin: 20vh auto;
+        padding: 5vw; }
+    .subtitulo {
+        color: black;
+        font-weight: 900;
+        font-size: 2em;
+        padding-bottom: 1.5em;
+        text-align: center; }
+    ol {
+        padding: 1em;
+        list-style-position: inside; }
+    ol li {
+        color: black;
+        font-size: 18px; }
+    ul {
+        padding: 1em;
+        list-style-position: inside; }
+    ul .iconosCrochet li {
+        color: black;
+        font-size: 18px;
+        list-style-image: url(../img/iconoCrochet.png);
+        text-align: center; }
+    body {
+        margin-bottom: 100px; } }
+
+@media (max-width: 550px) {
+    .contenedor {
+        width: 100%;
+        margin: 10vh 0;
+        padding: 5vw; }
+    .subtitulo {
+        color: black;
+        font-weight: 900;
+        font-size: 2em;
+        padding-bottom: 1.5em;
+        text-align: center; }
+    ol {
+        padding: 1em;
+        list-style-position: inside; }
+    ol li {
+        color: black;
+        font-size: 18px; }
+    ul {
+        padding: 1em;
+        list-style-position: inside; }
+    ul .iconosCrochet li {
+        color: black;
+        font-size: 18px;
+        list-style-image: url(../img/iconoCrochet.png);
+        text-align: center; }
+    body {
+        margin-bottom: 15vh; } }
+
+.noDesktop {
+    display: none; }
