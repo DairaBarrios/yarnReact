@@ -3,7 +3,7 @@ import Item from "./Item";
 import {Link} from "react-router-dom";
 import * as  utils from "../utils/constants.js"
 
-function ItemList(props) {
+function ItemList() {
     const [data, setData] = useState();
 
     useEffect(() => {
@@ -16,7 +16,7 @@ function ItemList(props) {
     })
 
     const mockItems = () => {
-        return new Promise((resolve) => setTimeout(() => resolve(utils.mockedItemList), 2000))
+        return new Promise((resolve) => setTimeout(() => resolve(utils.mockedItemList), 2))
     }
 
     return (
