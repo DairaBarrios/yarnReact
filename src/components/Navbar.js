@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -7,6 +7,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import CartWidget from './CartWidget'
 import {Link, NavLink} from "react-router-dom";
+import {CartContext} from "../context/CartContext";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -26,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function NavBar() {
     const classes = useStyles();
+    const items = useContext(CartContext).getItems()
 
     return (
         <div className={classes.root} id="navbar">
@@ -41,7 +43,7 @@ export default function NavBar() {
                     <NavLink to={"/category/mantas"}>
                         Mantas
                     </NavLink>
-                    <CartWidget id="carrito" className={classes.menuButton}></CartWidget>
+                    {items.length > 0 && <CartWidget id="carrito" className={classes.menuButton}></CartWidget>}
                 </Toolbar>
             </AppBar>
         </div>

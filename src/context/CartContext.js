@@ -10,11 +10,16 @@ export default function CartContextProvider ({ defaultValue = [], children}) {
     }
 
     function addItem(item, q) {
-        let cartItem = {
-            item: item,
-            quantity: q
-        }
-        if (!isInCart(item.id)) {
+        let productIndex = cart.findIndex((cartItem) => { return cartItem.item.id === item.id})
+        if (productIndex >= 0) {
+            let items = cart
+            items[productIndex].quantity += q
+            setCart([...items])
+        } else {
+            let cartItem = {
+                item: item,
+                quantity: q
+            }
             setCart([...cart, cartItem])
         }
     }
@@ -30,8 +35,6 @@ export default function CartContextProvider ({ defaultValue = [], children}) {
     }
 
     function isInCart(itemId) {
-        console.log(cart)
-        console.log(itemId)
         return cart.find(item => item.item.id == itemId)
     }
 
