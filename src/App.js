@@ -15,7 +15,7 @@ function App() {
                 <NavBar/>
                 <Switch>
                     <Route exact path="/">
-
+                        <h1>Bienvenido a Yarn</h1>
                     </Route>
                     <Route exact path="/category/:category">
                         <ItemListContainer id="titulo"/>

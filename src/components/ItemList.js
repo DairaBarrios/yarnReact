@@ -1,23 +1,24 @@
 import React, {useEffect, useState} from 'react'
 import Item from "./Item";
-import {Link} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import * as  utils from "../utils/constants.js"
+import {getFirestore} from "../firebase";
 
 function ItemList() {
     const [data, setData] = useState();
+    const {category} = useParams();
 
     useEffect(() => {
         async function fetchData() {
-            let response = await mockItems()
-            setData(response)
+            const db = getFirestore()
+            const itemCollection = db.collection("items")
+            itemCollection.where("categoryId", "==", category).get().then((querySnapshot) => {
+                setData(querySnapshot.docs.map(doc => { return {id: doc.id, ...doc.data()}}))
+            })
         }
 
         fetchData()
-    })
-
-    const mockItems = () => {
-        return new Promise((resolve) => setTimeout(() => resolve(utils.mockedItemList), 2))
-    }
+    }, [category])
 
     return (
         <div id="itemList">

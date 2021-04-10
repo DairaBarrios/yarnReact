@@ -43,6 +43,9 @@ export default function NavBar() {
                     <NavLink to={"/category/mantas"}>
                         Mantas
                     </NavLink>
+                    <NavLink to={"/category/alfombras"}>
+                        Alfombras
+                    </NavLink>
                     {items.length > 0 && <CartWidget id="carrito" className={classes.menuButton}></CartWidget>}
                 </Toolbar>
             </AppBar>
