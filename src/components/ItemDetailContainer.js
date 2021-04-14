@@ -18,12 +18,13 @@ function ItemDetailContainer(props) {
             itemCollection.doc(itemId).get().then((doc) => {
                 if (doc != null) {
                     setItem({id: doc.id, ...doc.data()})
+                    setStock(doc.data().stock)
                 }
             })
     }, [])
 
     const onAdd = (event) => {
-        if (count < stock) {
+        if (count < item.stock) {
             setCount(prevCount => Number(prevCount) + 1);
         }
     };
@@ -42,10 +43,10 @@ function ItemDetailContainer(props) {
 
     const addToCart = () => {
         let newItem = {
-            id: item ? item.id : props.id,
-            title: item ? item.title : props.title,
-            pictureUrl: item ? item.pictureUrl : props.pictureUrl,
-            price: item ? item.price : props.price
+            id: item && item.id,
+            title: item && item.title,
+            pictureUrl: item && item.pictureUrl,
+            price: item && item.price
         }
         context.addItem(newItem, count)
     }

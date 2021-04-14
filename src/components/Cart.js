@@ -24,6 +24,7 @@ function Cart() {
                             </button>
                         </div>
                         <p>Total :${total}</p>
+                        <Link to={'/checkout'}><button>Terminar compra</button></Link>
                     </>
                 ) :
                 <div>
